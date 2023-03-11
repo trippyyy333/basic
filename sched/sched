@@ -1,0 +1,29 @@
+import schedule
+import time
+import pyautogui
+import mouse
+
+def hoy():
+    while True:
+        print ("ccoollll coooollllllcooolll")
+
+
+
+def doubt():
+    print("Nooo dOuubtt!!")
+    print("Nooo dOuubtt!!")
+
+def doo():
+    print ("done")
+    pyautogui.move(1376, 1079)
+    pyautogui.click(button=Right)
+    pyautogui.hotkey('up')
+    time.sleep(1)
+    pyautogui.hotkey('enter')
+
+schedule.every().day.at("07:48:10").do(doo)
+
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
